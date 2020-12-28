@@ -79,7 +79,7 @@ html {
   width: 42px;
   background: crimson;
   right: 30px;
-  bottom: 30px;
+  bottom: 90px;
   text-align: center;
   line-height: 45px;
   color: #fff;
@@ -92,7 +92,7 @@ html {
   transition: all 0.3s ease;
 }
 .scroll-up-button.show {
-  bottom: 30px;
+  bottom: 50px;
   opacity: 1;
   pointer-events: auto;
 }
@@ -186,38 +186,18 @@ section .title::after {
 .about .title::after {
   content: "who i am";
 }
-/* .about .title::before,
-.skills .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-.about .title::after {
-  content: "who i am";
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  padding: 5px;
-  font-size: 20px;
-  color: crimson;
-  background: #ffffff;
-  transform: translateX(-50%);
-} */
+
 .about .about-content,
 .services .services-content,
-.contact .contact-content {
+.contact .contact-content,
+.skills .skills-content,
+.footer .footer-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.about .about-content .left,
-.skills .skills-content .left {
+.about .about-content .left {
   width: 45%;
 }
 
@@ -227,8 +207,7 @@ section .title::after {
   object-fit: cover;
   border-radius: 6px;
 }
-.about .about-content .right,
-.skills .skills-content .right {
+.about .about-content .right {
   width: 55%;
 }
 .about .about-content .right .text {
@@ -242,7 +221,7 @@ section .title::after {
 .about .about-content .right p {
   text-align: justify;
 }
-.about .about-content .right a {
+.about .about-content .right .download-cv {
   display: inline-block;
   background: crimson;
   color: #ffffff;
@@ -254,10 +233,14 @@ section .title::after {
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.about .about-content .right a:hover,
-.skills .skills-content .left a:hover {
+.about .about-content .right .download-cv:hover,
+.skills .skills-content .left .download-cv:hover {
   color: crimson;
   background: none;
+}
+.about .about-content .right .altcampus {
+  color: crimson;
+  font-size: 18px;
 }
 
 /* Services Section Start */
@@ -303,6 +286,10 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.para {
+  color: grey;
+  font-size: smaller;
+}
 
 /* Skills styling start */
 .skills .title::after {
@@ -324,7 +311,44 @@ section .title::after {
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
-.skills .skills-content .left .text {
+.skills .skills-content .card {
+  width: calc(33% - 20px);
+  height: 200px;
+  margin-bottom: 10px;
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.skills .skills-content .card:hover {
+  background: crimson;
+}
+.skills .skills-content .card:hover .box {
+  transform: scale(1.05);
+}
+.skills .skills-content .card .box {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.skills .skills-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.skills .skills-content .card:hover i {
+  color: #fff;
+}
+.skills .skills-content .card .text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* another UI */
+/* .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -384,7 +408,7 @@ section .title::after {
 }
 .skills .skills-content .right .mongo::before {
   width: 20%;
-}
+} */
 
 /* Contact Styling Start */
 .contact .title::after {
@@ -422,6 +446,7 @@ section .title::after {
 .contact .contact-content .info .sub-title {
   color: #111;
 }
+
 .contact .right form .fields {
   display: flex;
 }
@@ -479,18 +504,27 @@ section .title::after {
 }
 
 /* footer styling start */
-footer {
+.footer {
   background: #111;
-  padding: 20px 23px;
-  color: #fff;
-  text-align: center;
+  padding: 10px 0;
 }
-footer span a {
+.footer .footer-content .sub-title {
+  color: grey;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .footer-content .footer-icons {
+  color: grey;
+  font-size: 23px;
+  padding-right: 10px;
+  font-weight: 400;
+}
+.footer .footer-content .footer-icons:hover {
   color: crimson;
-  text-decoration: none;
 }
-footer span a:hover {
-  text-decoration: underline;
+
+span {
+  color: red;
 }
 
 /* responsive media query  */
@@ -568,7 +602,8 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .services-content .card {
+  .services .services-content .card,
+  .skills .skills-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -576,6 +611,12 @@ footer span a:hover {
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
+  }
+  .footer .footer-content .column {
+    width: 100%;
+  }
+  .footer-icons-css {
+    text-align: center;
   }
 }
 @media (max-width: 690px) {
@@ -595,9 +636,15 @@ footer span a:hover {
   .services .services-content .card {
     width: 100%;
   }
-  /* .skills .skills-content .column {
+  .skills .skills-content .card {
     width: 100%;
-  } */
+  }
+  .footer.footer-content .right {
+    padding-right: 30px;
+  }
+  .footer-icons-css {
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
@@ -605,5 +652,8 @@ footer span a:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+  .footer.footer-content .right {
+    padding-right: 30px;
   }
 }
