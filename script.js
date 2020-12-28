@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    
-
-
 
     $(window).scroll(function() {
         if(this.scrollY > 20) {
@@ -42,3 +39,4 @@ var typed = new Typed(".typing-2", {
     backSpeed: 60,
     loop: true
 })
+
