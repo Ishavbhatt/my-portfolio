@@ -449,6 +449,7 @@ section .title::after {
   color: crimson;
 }
 .contact .contact-content .info .head {
+  text-align: start;
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
@@ -712,6 +713,9 @@ span {
   .footer .footer-content .column {
     width: 100%;
   }
+  .left {
+    text-align: center;
+  }
   .footer-icons-css {
     text-align: center;
   }
@@ -743,6 +747,9 @@ span {
   .footer-icons-css {
     text-align: center;
   }
+  .left {
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
@@ -753,5 +760,8 @@ span {
   }
   .footer.footer-content .right {
     padding-right: 30px;
+  }
+  .left {
+    text-align: center;
   }
 }
