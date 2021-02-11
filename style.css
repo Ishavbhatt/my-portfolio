@@ -680,7 +680,9 @@ span {
     font-size: 25px;
   }
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   }
   .home .home-content .text-3 {
     font-size: 35px;
@@ -736,7 +738,8 @@ span {
     min-height: 500px;
   }
   .home .home-content .text-2 {
-    font-size: 60px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .home .home-content .text-3 {
     font-size: 32px;
@@ -764,7 +767,8 @@ span {
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
-    font-size: 50px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .home .home-content .text-3 {
     font-size: 27px;
