@@ -728,6 +728,13 @@ span {
   .max-width {
     padding: 0 23px;
   }
+  .home {
+    display: flex;
+    background: url("images/mobilev.jpeg") no-repeat center;
+    height: 100vh;
+    color: #ffffff;
+    min-height: 500px;
+  }
   .home .home-content .text-2 {
     font-size: 60px;
   }
