@@ -558,16 +558,13 @@ section .title::after {
 }
 .rgt-btn, .lft-btn {
   border-radius: 6px;
-  border: 0.5px solid #bbb4b4;
-  padding: 7px 20px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  background: #F6F2F2;
-  box-shadow: 3px 3px #857676;
-  cursor: pointer;
-}
-.rgt-btn:hover, .lft-btn:hover{
+  /* border: 0.5px solid #bbb4b4; */
+  padding: 5px 7px;
+  font-size: 18px;
+  /* letter-spacing: 1px; */
   background: #fff;
+  box-shadow: 3px 3px #7e7676;
+  cursor: pointer;
 }
 .anchor-proj{
    color: black;
@@ -584,7 +581,7 @@ section .title::after {
   color: #3d3535;
 }
 .projects .projects-content .card .box {
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .projects .projects-content .card:hover .box {
@@ -592,7 +589,7 @@ section .title::after {
 
 }
 .projects .projects-content .card .box {
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 /* footer styling start */
@@ -639,6 +636,13 @@ span {
 @media (max-width: 947px) {
   .max-width {
     padding: 0 50px;
+  }
+  .home {
+    display: flex;
+    background: url("images/mobilev.jpeg") no-repeat center;
+    height: 100vh;
+    color: #ffffff;
+    min-height: 500px;
   }
   .menu-btn {
     color: crimson;
