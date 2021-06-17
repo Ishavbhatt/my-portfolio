@@ -526,11 +526,11 @@ section .title::after {
 .projects .projects-content .card {
   margin: 10px;
   width: calc(33% - 20px);
-  background: #F6F2F2;
+  background: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 .projects .title::after {
   content: "what i did";
@@ -551,28 +551,31 @@ section .title::after {
   height: auto;
   border-radius: 6px;
 }
-.projects-btn-div {
+/* .projects-btn-div {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-}
-.rgt-btn, .lft-btn {
-  border-radius: 6px;
-  /* border: 0.5px solid #bbb4b4; */
+} */
+.prj-btn{
+ border-radius: 2px;
   padding: 5px 7px;
+  width: 100px;
+  margin: auto;
+  margin-top: 10px;
   font-size: 18px;
-  /* letter-spacing: 1px; */
-  background: #fff;
-  box-shadow: 3px 3px #7e7676;
+  background: crimson;
   cursor: pointer;
 }
+.prj-btn:hover {
+  background: rgb(211, 39, 73);
+}
 .anchor-proj{
-   color: black;
+   color: white;
 }
 .project-name {
   padding: 10px 0;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 .projects-para {
@@ -581,15 +584,15 @@ section .title::after {
   color: #3d3535;
 }
 .projects .projects-content .card .box {
-  transition: all 0.7s ease;
+  /* transition: all 0.7s ease; */
 }
 
 .projects .projects-content .card:hover .box {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 
 }
 .projects .projects-content .card .box {
-  transition: all 0.7s ease;
+  /* transition: all 0.7s ease; */
 }
 
 /* footer styling start */
